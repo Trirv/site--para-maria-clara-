@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Oi, Maria</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(120deg, #1e1e2f, #3a3a6a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      padding: 40px;
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      max-width: 420px;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 26px;
+      border: none;
+      border-radius: 30px;
+      background: #ff5fa2;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: #ff3b8d;
+    }
+
+    .hidden {
+      display: none;
+      margin-top: 22px;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Oi, Maria 👋</h1>
+    <p>
+      Eu estudo programação…<br>
+      então resolvi criar um site<br>
+      só pra dizer oi 🙂
+    </p>
+
+    <button onclick="reveal()">Clique aqui (sem bugs, prometo kkkk)</button>
+
+    <p id="message" class="hidden">
+      Ok… talvez eu ainda esteja aprendendo programação 😅<br><br>
+      Mas isso aqui foi feito com carinho.<br>
+      E bastante paciencia também 💙
+    </p>
+  </div>
+
+  <script>
+    function reveal() {
+      document.getElementById("message").classList.remove("hidden");
+      alert("Aviso importante: este site contém boas intenções 😌, foi feito com muito amor e carinho kkk");
+    }
+  </script>
+
+</body>
+</html>
